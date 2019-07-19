@@ -1,0 +1,21 @@
+html, body {
+    background: linear-gradient(to bottom, whitesmoke, gainsboro) fixed;
+    margin: 0;
+    padding: 0;
+}
+#firstname {
+    color: white;
+}
+#lastname {
+    color: black;
+}
+#namecontainer {
+    display: flex;
+    justify-content: center;
+}
+.name {
+    font-family: Georgia, Palatino, Garamond, serif;
+    font-size: 10vw;
+    font-style: italic;
+    font-weight: bolder;
+}
