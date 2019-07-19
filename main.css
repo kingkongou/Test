@@ -11,6 +11,7 @@ button {
     font-size: 10vh;
     padding: 0.5% 1%;
     text-align: center;
+    top: 5vh;
 }
 #buttoncontainer, #namecontainer {
     display: flex;
