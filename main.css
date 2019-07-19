@@ -6,22 +6,19 @@ body, html {
 button {
     background-color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 15%;
     color: black;
-    font-family: Georgia, Palatino, Garamond, serif;
-    font-size: 5vh;
-    padding: 11vh 4vw 11vh 4vw;
-    position: absolute;
+    font-size: 10vh;
+    padding: 0.5% 1%;
     text-align: center;
-    top: 3vh;
 }
 #buttoncontainer, #namecontainer {
     display: flex;
     justify-content: center;
 }
 #buttoncontainer {
+   font-family: Georgia, Palatino, Garamond, serif;
    position: absolute;
-   top: 50%;
    width: 100%;
 }
 #firstname {
