@@ -17,15 +17,15 @@ body, html {
     overflow-x: initial;
     perspective: 30px;
 }
+.content {
+  position: relative;
+  height: auto;
+}
 .name {
     font-family: Georgia, Palatino, Garamond, serif;
     font-size: 10vw;
     font-style: italic;
     font-weight: bolder;
-}
-.content {
-  position: relative;
-  height: auto;
 }
 .parallax {
     background: url('https://fbfqcvs8hx-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/opl-parallax-universe.jpg') no-repeat center;
