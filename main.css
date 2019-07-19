@@ -1,47 +1,43 @@
 body, html {
     background: linear-gradient(to bottom, gainsboro, whitesmoke) fixed;
-    font-family: Georgia, Palatino, Garamond, serif;
-    margin: 0;
-    padding: 0;
-}
-button {
-    background-color: white;
-    border: none;
-    border-radius: 15%;
     color: black;
-    font-size: 10vh;
-    height: 13vh;
-    padding: 0.5% 1%;
-    text-align: center;
-    top: 0;
+    font-family: Georgia, Palatino, Garamond, serif;
+    margin: 0px;
+    padding: 0px;
 }
-#buttoncontainer, #namecontainer {
+#namecontainer {
     display: flex;
-    height: 50%;
     justify-content: center;
-    position: absolute;
-    width: 100%;
-}
-#buttoncontainer {
-   bottom: 0;
 }
 #firstname {
     color: white;
 }
-#lastname {
-    color: black;
-}
-#namecontainer {
-    top: 0;
-}
 #wrapper {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    overflow-x: initial;
+    perspective: 30px;
 }
 .name {
     font-family: Georgia, Palatino, Garamond, serif;
     font-size: 10vw;
     font-style: italic;
     font-weight: bolder;
-    top: 0;
+}
+.content {
+  position: relative;
+  height: auto;
+}
+.parallax {
+    background: url('https://fbfqcvs8hx-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/opl-parallax-universe.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+}
+h2 {
+    font-size: 5vh;
+    margin: 3px 0px 0px 10px;
+}
+p {
+    font-size: 3vh;
+    margin: 0px 0px 5px 10px;
 }
