@@ -1,10 +1,11 @@
 body, html {
-    background: linear-gradient(to bottom, gainsboro, whitesmoke) fixed;
+    background: linear-gradient(to bottom, whitesmoke, white) fixed;
     color: black;
     font-family: Georgia, Palatino, Garamond, serif;
     margin: 0px;
     padding: 0px;
 }
+
 #namecontainer {
     display: flex;
     justify-content: center;
@@ -31,7 +32,7 @@ body, html {
     background: url('https://fbfqcvs8hx-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/opl-parallax-universe.jpg') no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    height: 400px;
+    height: 40vh;
 }
 h2 {
     font-size: 5vh;
