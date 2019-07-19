@@ -9,17 +9,17 @@ button {
     border-radius: 15%;
     color: black;
     font-size: 10vh;
+    margin-top: 20vh;
     padding: 0.5% 1%;
     text-align: center;
-    top: 5vh;
 }
 #buttoncontainer, #namecontainer {
     display: flex;
     justify-content: center;
 }
 #buttoncontainer {
+   align-content: center;
    font-family: Georgia, Palatino, Garamond, serif;
-   position: absolute;
    width: 100%;
 }
 #firstname {
