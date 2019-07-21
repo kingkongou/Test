@@ -52,12 +52,14 @@ body, html {
     position: fixed; 
 }
 @media all and (orientation:portrait) {
+#banner {
+    height: 10vh;    
+}
 #csscontainer {
     height: 10vh;
 }
-}
 #htmlcontainer {
-    height: 10vh;
+    height: 70vh;
 }
 #jscontainer {
     height: 10vh;
