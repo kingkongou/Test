@@ -37,12 +37,9 @@ body, html {
     width: 4vw;  
 }
 #title {
-    display: block;
-    height: 3vw;
     left: 3vw;
     position: absolute;
     top: 50%;                       
-    transform: translate(0, -50%);
     width: 22vw;
 }
 #wrapper {
@@ -51,7 +48,7 @@ body, html {
 .heading {
     display: block;
     height: 3vw;
-    margin-top: -1.4vw;
+    transform: translate(0, -50%);
     position: fixed; 
 }
 @media all and (orientation:portrait) {
@@ -68,16 +65,10 @@ body, html {
     width: 6vh;  
 }
 #title {
-    display: block;
-    height: 4.5vh;
-    left: 4.5vh;
-    position: absolute;
-    top: 50%;                       
-    transform: translate(0, -50%);
+    left: 4.5vh;                  
     width: 33vh;
 }
 .heading {
     height: 4.5vh;
-    transform: translate(0, -50%);
 }
 }
