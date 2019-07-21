@@ -78,6 +78,6 @@ body, html {
 }
 .heading {
     height: 4.5vh;
-    margin-top: -2.6vh;
+    transform: translate(0, -50%);
 }
 }
