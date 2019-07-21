@@ -67,6 +67,15 @@ body, html {
     right: 4.5vh;
     width: 6vh;  
 }
+#title {
+    display: block;
+    height: 4.5vh;
+    left: 4.5vh;
+    position: absolute;
+    top: 50%;                       
+    transform: translate(0, -50%);
+    width: 33vh;
+}
 .heading {
     height: 4.5vh;
     margin-top: -2.8vh;
