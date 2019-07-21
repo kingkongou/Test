@@ -52,16 +52,31 @@ body, html {
     position: fixed; 
 }
 @media all and (orientation:portrait) {
-#banner {
-    height: 10vh;    
-}
-#csscontainer {
-    height: 10vh;
-}
-#htmlcontainer {
-    height: 70vh;
-}
-#jscontainer {
-    height: 10vh;
-}
+    #banner {
+        height: 10vh;    
+    }
+    #csscontainer {
+        height: 10vh;
+    }
+    #cssheading {
+        left: 4.5vh;
+        width: 10.5vh;
+    }   
+    #htmlcontainer {
+        height: 70vh;
+    }
+    #htmlheading {
+        right: 4.5vh;
+        width: 16.5vh;
+    }    
+    #jscontainer {
+        height: 10vh;
+    }
+    #jsheading {
+        right: 4.5vh;
+        width: 6vh;
+    }
+    .heading {
+        height: 4.5vh;
+    }
 }
