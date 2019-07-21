@@ -76,6 +76,10 @@ body, html {
         right: 4.5vh;
         width: 6vh;
     }
+    #title {
+        left: 4.5vh;                    
+        width: 33vh;
+    }
     .heading {
         height: 4.5vh;
     }
