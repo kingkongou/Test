@@ -70,5 +70,6 @@ body, html {
 }
 .heading {
     height: 4.5vh;
+    transform: translate(0, -50%);
 }
 }
