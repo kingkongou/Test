@@ -54,22 +54,21 @@ body, html {
     margin-top: -1.4vw;
     position: fixed; 
 }
-
 @media all and (orientation:portrait) {
 #cssheading {
-    left: 3vh;
-    width: 7vh;
+    left: 4.5vh;
+    width: 10.5vh;
 }
 #htmlheading {
-    right: 3vh;
-    width: 11vh;
+    right: 4.5vh;
+    width: 16.5vh;
 }
 #jsheading {
-    right: 3vh;
-    width: 4vh;  
+    right: 4.5vh;
+    width: 6vh;  
 }
 .heading {
-    height: 3vh;
-    margin-top: -1.4vh;
+    height: 4.5vh;
+    margin-top: -2.8vh;
 }
 }
