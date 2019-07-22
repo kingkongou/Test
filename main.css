@@ -1,86 +1,16 @@
-body, html {
-    color: black;
-    font-family: Georgia, Palatino, Garamond, serif;
-    margin: 0px;
-    padding: 0px;
-}
-#banner {
-    background: #ECECEC;
-    height: 15vh;
-    position: relative;
-}
-#csscontainer {
-    background: #90CCF4;
-    height: 15vh;
-}
-#cssheading {
-    left: 4.5vw;
-    width: 10.5vw;
-}
-#htmlcontainer {
-    align-content: center;
-    background: #F78888;
-    display: flex;
-    height: 55vh;
-    justify-content: center;
-}
-#htmlheading {
-    right: 4.5vw;
-    width: 16.5vw;
-}
-#jscontainer {
-    background: #F3D250;
-    height: 15vh;
-}
-#jsheading {
-    right: 4.5vw;
-    width: 6vw;  
-}
-#title {
-    left: 4.5vw;
-    position: absolute;
-    top: 50%;                       
-    width: 33vw;
-}
-#wrapper {
+body {
+    background: url("background.jpeg") center no-repeat;
     height: 100vh;
 }
-.heading {
-    display: block;
-    height: 4.5vw;
-    transform: translate(0, -50%);
-    position: fixed; 
+@media (orientation: landscape) {
+    body {
+        background-size: 100% auto;
+        overflow-y: hidden;
+    }
 }
-@media all and (orientation:portrait) {
-    #banner {
-        height: 10vh;    
-    }
-    #csscontainer {
-        height: 10vh;
-    }
-    #cssheading {
-        left: 4.5vh;
-        width: 10.5vh;
-    }   
-    #htmlcontainer {
-        height: 70vh;
-    }
-    #htmlheading {
-        right: 4.5vh;
-        width: 16.5vh;
-    }    
-    #jscontainer {
-        height: 10vh;
-    }
-    #jsheading {
-        right: 4.5vh;
-        width: 6vh;
-    }
-    #title {
-        left: 4.5vh;                    
-        width: 33vh;
-    }
-    .heading {
-        height: 4.5vh;
+@media (orientation: portrait) {
+    body {
+        background-size: auto 100%;
+        overflow-x: hidden;
     }
 }
