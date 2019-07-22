@@ -1,16 +1,5 @@
 body {
-    background: url("background.jpeg") center no-repeat;
+    background: url("background.jpg") center no-repeat;
+    background-size: auto 100vh;
     height: 100vh;
-}
-@media (orientation: landscape) {
-    body {
-        background-size: 100% auto;
-        overflow-y: hidden;
-    }
-}
-@media (orientation: portrait) {
-    body {
-        background-size: auto 100%;
-        overflow-x: hidden;
-    }
 }
