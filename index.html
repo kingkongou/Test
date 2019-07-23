@@ -7,15 +7,20 @@
         <script type="text/javascript">
         window.onload = function() {
             var myImages = new Array();
-            myImages[0] = "img0.jpg";
-            myImages[1] = "img1.jpg";
-            myImages[2] = "img2.jpg";
-            myImages[3] = "img3.jpg";
-            for(i = 0; i < 4; i++) {
+            myImages[0] = "images/img0.jpg";
+            myImages[1] = "images/img1.jpg";
+            myImages[2] = "images/img2.jpg";
+            myImages[3] = "images/img3.jpg";
+            myImages[4] = "images/img4.jpg";
+            myImages[5] = "images/img5.jpg";
+            myImages[6] = "images/img6.jpg";
+            myImages[7] = "images/img7.jpg";
+            myImages[8] = "images/img8.jpg";
+            for(i = 0; i < 9; i++) {
                 var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                 var image = document.createElement("img");
                 image.display = "block";
-                image.src = myImage;
+                image.src = 'thumb/' + myImage;
                 document.getElementById("flex-container").appendChild(image);
             }
         }
@@ -24,8 +29,8 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png"/>
-            <img id="menu" src="hamburger.png"/>
+            <img id="logo" src="images/logo.png"/>
+            <img id="menu" src="images/hamburger.png"/>
         </header>
         <main>
             <div id="flex-container">

@@ -29,6 +29,7 @@ main #flex-container {
     margin-top: 7.5vh;
 }
 main #flex-container img{;
+    border: 1px gainsboro solid;
     border-radius: 5%;
     margin: 20px;
     width: 200px;
