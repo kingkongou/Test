@@ -1,5 +1,35 @@
 body {
-    background: url("background.jpg") center no-repeat;
-    background-size: auto 100vh;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 10vmin;
+}
+header h1 {
+    color: lightskyblue;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 11vmin;
+    font-style:italic;
+    font-weight: lighter;
+    left: 1vmin;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+main {
+    height: 90vh;
+}
+main #flex-container {
+    align-content: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+main #flex-container .test {;
+    margin: 20px;
+    width: 280px;
+}
+main #flex-container .test img {
+    border-radius: 5%;
+    width: 100%;
 }
