@@ -1,33 +1,27 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 header {
-    height: 10vmin;
-}
-header h1 {
-    color: lightskyblue;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 11vmin;
-    font-style:italic;
-    font-weight: lighter;
-    left: 1vmin;
-    margin: 0;
-    position: absolute;
+    background: whitesmoke;
+    border-bottom: 1px gainsboro solid;
+    height: 50px;
+    position: fixed;
     top: 0;
-}
-main {
-    height: 90vh;
+    width: 100%;
 }
 main #flex-container {
     align-content: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-top: 70px;
 }
 main #flex-container .test {;
     margin: 20px;
-    width: 280px;
+    width: 200px;
 }
 main #flex-container .test img {
     border-radius: 5%;
