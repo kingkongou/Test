@@ -27,7 +27,7 @@ main #flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin-top: 7.5vh;
+    margin-top: 7.7vmin;
     padding-right: 2%;
 }
 main #flex-container img {
@@ -40,7 +40,7 @@ main #flex-container img {
     main #flex-container {padding-right: 0%;}
     main #flex-container img {
         border-radius: 0%;
-        margin: 5% 0%;
+        margin: 3.5% 0%;
         width: 100%;
     }
 }
