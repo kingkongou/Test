@@ -37,8 +37,10 @@ main #flex-container {
     padding-right: 2%;
 }
 main #flex-container img {
+    align-self: center;
     display: block;
     border-radius: 5%;
+    height: auto;
     margin: 2% 0% 0% 2%;
 }
 @media screen and (max-width: 479px) {

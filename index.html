@@ -7,34 +7,7 @@
         <script type="text/javascript">
             // Add images onload + establish image array
             window.onload = function() {
-                var myImages = new Array();
-                myImages[0] = "images/img0.jpg";
-                myImages[1] = "images/img1.jpg";
-                myImages[2] = "images/img2.jpg";
-                myImages[3] = "images/img3.jpg";
-                myImages[4] = "images/img4.jpg";
-                myImages[5] = "images/img5.jpg";
-                myImages[6] = "images/img6.jpg";
-                myImages[7] = "images/img7.jpg";
-                myImages[8] = "images/img8.jpg";
-                myImages[9] = "images/img0.jpg";
-                myImages[10] = "images/img1.jpg";
-                myImages[11] = "images/img2.jpg";
-                myImages[12] = "images/img3.jpg";
-                myImages[13] = "images/img4.jpg";
-                myImages[14] = "images/img5.jpg";
-                myImages[15] = "images/img6.jpg";
-                myImages[16] = "images/img7.jpg";
-                myImages[17] = "images/img8.jpg";
-                myImages[18] = "images/img0.jpg";
-                myImages[19] = "images/img1.jpg";
-                myImages[20] = "images/img2.jpg";
-                myImages[21] = "images/img3.jpg";
-                myImages[22] = "images/img4.jpg";
-                myImages[23] = "images/img5.jpg";
-                myImages[24] = "images/img6.jpg";
-                myImages[25] = "images/img7.jpg";
-                myImages[26] = "images/img8.jpg";
+                var myImages = ["images/img0.jpg", "images/img0.jpg", "images/img0.jpg", "images/img1.jpg", "images/img1.jpg", "images/img1.jpg", "images/img2.jpg", "images/img2.jpg", "images/img2.jpg", "images/img3.jpg", "images/img3.jpg", "images/img3.jpg", "images/img4.jpg", "images/img4.jpg", "images/img4.jpg", "images/img5.jpg", "images/img5.jpg", "images/img5.jpg", "images/img6.jpg", "images/img6.jpg", "images/img6.jpg", "images/img7.jpg", "images/img7.jpg", "images/img7.jpg", "images/img8.jpg", "images/img8.jpg", "images/img8.jpg"];
                 // Add 27 images
                 for(i = 0; i < 27; i++) {
                     var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
@@ -57,8 +30,8 @@
             <img id="menu" src="images/hamburger.png"/>
         </header>
         <main>
-            <ul id="flex-container">
-            </ul>
+            <div id="flex-container">
+            </div>
         </main>
         <footer>
         </footer>
