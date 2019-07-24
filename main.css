@@ -1,36 +1,58 @@
 body {
-    height: 100%;
+    background: whitesmoke;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
+/* Header and contents */
 header {
     background: white;
     border-bottom: 2px gainsboro solid;
-    height: 7.5vh;
+    height: 7.5vmin;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%
 }
 header #logo {
     height: 80%;
-    padding: 0.8vh;
+    padding: 0.75vmin;
 }
 header #menu {
     float: right;
     height: 60%;
-    padding: 1.6vh;
+    padding: 1.5vmin;
 }
+/* Flex-container and contents */
 main #flex-container {
     align-content: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin-top: 7.5vh;
+    padding-right: 2%;
 }
-main #flex-container img{;
-    border: 1px gainsboro solid;
+main #flex-container img {
     border-radius: 5%;
-    margin: 20px;
-    width: 200px;
+    display: block;
+    margin: 2% 0% 0% 2%;
+}
+/* Make images responsive */
+@media screen and (max-width: 479px) {
+    main #flex-container {padding-right: 0%;}
+    main #flex-container img {
+        border-radius: 0%;
+        margin: 5% 0%;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 480px) {
+    main #flex-container img {width: 47%;}
+}
+@media screen and (min-width: 720px) {
+    main #flex-container img {width: 31%;}
+}
+@media screen and (min-width: 960px) {
+    main #flex-container img {width: 23%;}
+}
+@media screen and (min-width: 1200px) {
+    main #flex-container img {width: 18%;}
 }

@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link  href="main.css" rel="stylesheet">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <script type="text/javascript">
-        window.onload = function() {
-            var myImages = new Array();
-            myImages[0] = "images/img0.jpg";
-            myImages[1] = "images/img1.jpg";
-            myImages[2] = "images/img2.jpg";
-            myImages[3] = "images/img3.jpg";
-            myImages[4] = "images/img4.jpg";
-            myImages[5] = "images/img5.jpg";
-            myImages[6] = "images/img6.jpg";
-            myImages[7] = "images/img7.jpg";
-            myImages[8] = "images/img8.jpg";
-            for(i = 0; i < 9; i++) {
-                var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
-                var image = document.createElement("img");
-                image.display = "block";
-                image.src = 'thumb/' + myImage;
-                document.getElementById("flex-container").appendChild(image);
+            window.onload = function() {
+                var myImages = new Array();
+                myImages[0] = "images/img0.jpg";
+                myImages[1] = "images/img1.jpg";
+                myImages[2] = "images/img2.jpg";
+                myImages[3] = "images/img3.jpg";
+                myImages[4] = "images/img4.jpg";
+                myImages[5] = "images/img5.jpg";
+                myImages[6] = "images/img6.jpg";
+                myImages[7] = "images/img7.jpg";
+                myImages[8] = "images/img8.jpg";
+                for(i = 0; i < 9; i++) {
+                    var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
+                    var image = document.createElement("img");
+                    image.src = 'thumbs/' + myImage;
+                    document.getElementById("flex-container").appendChild(image);
+                }
             }
-        }
         </script>
-        <title>Test</title>
+        <title>Wallpapers</title>
     </head>
     <body>
         <header>
