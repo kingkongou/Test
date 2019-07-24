@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <script type="text/javascript">
+            // Add images onload + establish image array
             window.onload = function() {
                 var myImages = new Array();
                 myImages[0] = "images/img0.jpg";
@@ -16,12 +17,36 @@
                 myImages[6] = "images/img6.jpg";
                 myImages[7] = "images/img7.jpg";
                 myImages[8] = "images/img8.jpg";
-                for(i = 0; i < 9; i++) {
+                myImages[9] = "images/img0.jpg";
+                myImages[10] = "images/img1.jpg";
+                myImages[11] = "images/img2.jpg";
+                myImages[12] = "images/img3.jpg";
+                myImages[13] = "images/img4.jpg";
+                myImages[14] = "images/img5.jpg";
+                myImages[15] = "images/img6.jpg";
+                myImages[16] = "images/img7.jpg";
+                myImages[17] = "images/img8.jpg";
+                myImages[18] = "images/img0.jpg";
+                myImages[19] = "images/img1.jpg";
+                myImages[20] = "images/img2.jpg";
+                myImages[21] = "images/img3.jpg";
+                myImages[22] = "images/img4.jpg";
+                myImages[23] = "images/img5.jpg";
+                myImages[24] = "images/img6.jpg";
+                myImages[25] = "images/img7.jpg";
+                myImages[26] = "images/img8.jpg";
+                // Add 27 images
+                for(i = 0; i < 27; i++) {
                     var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                     var image = document.createElement("img");
-                    image.src = 'thumbs/' + myImage;
+                    image.src = "thumbs/" + myImage; // Intitially display thumbnails
+                    image.onclick = function() { viewImage(this.src); } // Allow user to view full image
                     document.getElementById("flex-container").appendChild(image);
                 }
+            }
+            // Display full image
+            function viewImage(src) {
+                window.location.href = src.replace("thumb/", "");
             }
         </script>
         <title>Wallpapers</title>
@@ -32,8 +57,8 @@
             <img id="menu" src="images/hamburger.png"/>
         </header>
         <main>
-            <div id="flex-container">
-            </div>
+            <ul id="flex-container">
+            </ul>
         </main>
         <footer>
         </footer>
