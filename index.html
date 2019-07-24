@@ -7,15 +7,29 @@
         <script type="text/javascript">
             // Add images onload + establish image array
             window.onload = function() {
-                var myImages = ["images/img0.jpg", "images/img0.jpg", "images/img0.jpg", "images/img1.jpg", "images/img1.jpg", "images/img1.jpg", "images/img2.jpg", "images/img2.jpg", "images/img2.jpg", "images/img3.jpg", "images/img3.jpg", "images/img3.jpg", "images/img4.jpg", "images/img4.jpg", "images/img4.jpg", "images/img5.jpg", "images/img5.jpg", "images/img5.jpg", "images/img6.jpg", "images/img6.jpg", "images/img6.jpg", "images/img7.jpg", "images/img7.jpg", "images/img7.jpg", "images/img8.jpg", "images/img8.jpg", "images/img8.jpg"];
-                // Add 27 images
-                for(i = 0; i < 27; i++) {
+                var myImages = ["images/img0.jpg", "images/img0.jpg", "images/img0.jpg", "images/img0.jpg", "images/img0.jpg", "images/img1.jpg", "images/img1.jpg", "images/img1.jpg", "images/img1.jpg", "images/img1.jpg", "images/img2.jpg", "images/img2.jpg", "images/img2.jpg", "images/img2.jpg", "images/img2.jpg", "images/img3.jpg", "images/img3.jpg", "images/img3.jpg", "images/img3.jpg", "images/img3.jpg", "images/img4.jpg", "images/img4.jpg", "images/img4.jpg", "images/img4.jpg", "images/img4.jpg", "images/img5.jpg", "images/img5.jpg", "images/img5.jpg", "images/img5.jpg", "images/img5.jpg", "images/img6.jpg", "images/img6.jpg", "images/img6.jpg", "images/img6.jpg", "images/img6.jpg", "images/img7.jpg", "images/img7.jpg", "images/img7.jpg", "images/img7.jpg", "images/img7.jpg", "images/img8.jpg", "images/img8.jpg", "images/img8.jpg", "images/img8.jpg", "images/img8.jpg"];
+                // Add 20 images
+                for(i = 0; i < 30; i++) {
                     var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                     var image = document.createElement("img");
                     image.className = "content";
                     image.src = "thumbs/" + myImage; // Intitially display thumbnails
-                    image.onclick = function() { viewImage(this.src); } // Allow user to view full image
+                    image.onclick = function() {viewImage(this.src);} // Allow user to view full image
                     document.getElementById("flex-container").appendChild(image);
+                }
+            }
+            // Add images onscroll
+            window.onscroll = function() {
+                if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                    // Add 5 images
+                    for(i = 0; i < 5; i++)  {
+                        var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
+                        var image = document.createElement("img");
+                        image.className = "content";
+                        image.src = "thumbs/" + myImage; // Intitially display thumbnails
+                        image.onclick = function() {viewImage(this.src);} // Allow user to view full image
+                        document.getElementById("flex-container").appendChild(image);
+                    }
                 }
             }
             // Display full image
