@@ -12,6 +12,7 @@
                 for(i = 0; i < 27; i++) {
                     var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                     var image = document.createElement("img");
+                    image.className = "content";
                     image.src = "thumbs/" + myImage; // Intitially display thumbnails
                     image.onclick = function() { viewImage(this.src); } // Allow user to view full image
                     document.getElementById("flex-container").appendChild(image);
@@ -33,7 +34,5 @@
             <div id="flex-container">
             </div>
         </main>
-        <footer>
-        </footer>
     </body>
 </html>
