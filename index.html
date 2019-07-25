@@ -6,10 +6,13 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <script type="text/javascript">
             // Establish thumbnail image array
-            var myImages = ["thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg", "thumbs/cyberpunk2077/ExoticDancer.jpg"];
-            // Add images onload
+            var myImages = [];
+            for (var i = 0; i < 95; i++) {
+                myImages.push ("thumbs/img" + i + ".jpg")
+            }
+            // Add 30 images onload
             window.onload = function() {
-                for (i = 0; i < 30; i++) { // Add 30 images
+                for (var i = 0; i < 30; i++) {
                     var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                     var image = document.createElement("img");
                     image.className = "content";
@@ -18,11 +21,11 @@
                     document.getElementById("flex-container").appendChild(image);
                 }
             }
-            // Add images onscroll
+            // Add 5 images onscroll
             window.onscroll = function() {
                 if ((window.innerHeight + window.pageYOffset) >= (document.body.scrollHeight * 0.8)) { // Check if user near bottom of page
-                    if ((myImages.length) > 0) { // Check if any images remaining
-                        for (i = 0; i < 5; i++)  { // Add 5 images
+                    if ((myImages.length) > 0) {
+                        for (var i = 0; i < 5; i++) {
                             var myImage = myImages.splice(Math.floor(Math.random() * (myImages.length)), 1);
                             var image = document.createElement("img");
                             image.className = "content";
