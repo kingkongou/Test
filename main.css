@@ -7,20 +7,43 @@ body {
 header {
     background: white;
     border-bottom: 2px gainsboro solid;
-    height: 10vmin;
+    height: 12.5vmin;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 header #logo {
-    height: 80%;
-    margin: 1vmin;
+    height: 10vmin;
+    margin: 1.25vmin;
+}
+/* Logo and icons */
+header #facebookicon {
+    background: url("images/icons/facebookicon.png");
+    background-size: contain;
+}
+header #instagramicon {
+    background: url("images/icons/instagramicon.png");
+    background-size: contain;
+}
+header #pinteresticon {
+    background: url("images/icons/pinteresticon.png");
+    background-size: contain;
+}
+header #redditicon {
+    background: url("images/icons/redditicon.png");
+    background-size: contain;
+}
+header #twittericon {
+    background: url("images/icons/twittericon.png");
+    background-size: contain;
 }
 header .icon {
+    background-size: contain;
     float: right;
-    height: 70%;
-    margin: 1.5vmin 1.5vmin 0 0;
+    height: 10vmin;
+    margin: 1.25vmin 1.25vmin 0 0;
+    width: 10vmin;
 }
 /* Main */
 main #flex-container {
@@ -28,7 +51,7 @@ main #flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 10vmin 2% 2% 0;
+    margin: 12.5vmin 2% 0 0;
 }
 main #flex-container .content {
     align-self: center;
@@ -36,10 +59,37 @@ main #flex-container .content {
     display: block;
     height: auto;
     margin: 2% 0 0 2%;
-    transition: .3s ease-in-out;
 }
 main #flex-container .content:hover {
-    transform: scale(0.9);
+    transition: .3s ease-in-out;
+}
+/* Make elements hoverable */
+header #redditicon:hover {background: url("images/icons/redditiconhover.png");}
+header #logo, header .icon, main #flex-container .content {
+    transition: .3s ease-in-out;
+}
+header #logo:hover, header .icon:hover, main #flex-container .content:hover {
+    transform: scale(0.85);
+}
+header #facebookicon:hover {
+    background: url("images/icons/facebookiconhover.png");
+    background-size: contain;
+}
+header #instagramicon:hover {
+    background: url("images/icons/instagramiconhover.png");
+    background-size: contain;
+}
+header #pinteresticon:hover {
+    background: url("images/icons/pinteresticonhover.png");
+    background-size: contain;
+}
+header #redditicon:hover {
+    background: url("images/icons/redditiconhover.png");
+    background-size: contain;
+}
+header #twittericon:hover {
+    background: url("images/icons/twittericonhover.png");
+    background-size: contain;
 }
 /* Make images responsive */
 @media screen and (max-width: 479px) {
