@@ -3,20 +3,26 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Header and contents */
+/* Header */
 header {
     background: white;
     border-bottom: 2px gainsboro solid;
     height: 10vmin;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 1;
 }
 header #logo {
     height: 80%;
     margin: 1vmin;
 }
-/* Flex-container and contents */
+header .icon {
+    float: right;
+    height: 70%;
+    margin: 1.5vmin 1.5vmin 0 0;
+}
+/* Main */
 main #flex-container {
     align-content: flex-start;
     display: flex;
@@ -30,6 +36,10 @@ main #flex-container .content {
     display: block;
     height: auto;
     margin: 2% 0 0 2%;
+    transition: .3s ease-in-out;
+}
+main #flex-container .content:hover {
+    transform: scale(0.9);
 }
 /* Make images responsive */
 @media screen and (max-width: 479px) {
