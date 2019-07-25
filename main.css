@@ -41,9 +41,9 @@ header #twittericon {
 header .icon {
     background-size: contain;
     float: right;
-    height: 10vmin;
-    margin: 1.25vmin 1.25vmin 0 0;
-    width: 10vmin;
+    height: 9vmin;
+    margin: 1.75vmin 1.75vmin 0 0;
+    width: 9vmin;
 }
 /* Main */
 main #flex-container {
@@ -60,15 +60,12 @@ main #flex-container .content {
     height: auto;
     margin: 2% 0 0 2%;
 }
-main #flex-container .content:hover {
-    transition: .3s ease-in-out;
-}
 /* Make elements hoverable */
 header #redditicon:hover {background: url("images/icons/redditiconhover.png");}
-header #logo, header .icon, main #flex-container .content {
+header .icon, main #flex-container .content {
     transition: .3s ease-in-out;
 }
-header #logo:hover, header .icon:hover, main #flex-container .content:hover {
+header .icon:hover, main #flex-container .content:hover {
     transform: scale(0.85);
 }
 header #facebookicon:hover {
