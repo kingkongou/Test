@@ -16,11 +16,6 @@ header #logo {
     height: 80%;
     margin: 1vmin;
 }
-header #menu {
-    float: right;
-    height: 60%;
-    margin: 2vmin;
-}
 /* Flex-container and contents */
 main #flex-container {
     align-content: flex-start;
