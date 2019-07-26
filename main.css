@@ -3,7 +3,12 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Header */
+footer {
+    background: white;
+    border-top: 2px gainsboro solid;
+    height: 7.5vmin;
+}
+/* Header and contents */
 header {
     background: white;
     border-bottom: 2px gainsboro solid;
@@ -14,10 +19,10 @@ header {
     z-index: 1;
 }
 header #logo {
-    height: 10vmin;
-    margin: 1.25vmin;
+    height: 10vmin; /* 12.5 - 1.25 x 2 */
+    margin: 1.25vmin; /* 12.5 / 10 */
 }
-/* Logo and icons */
+/* Icons */
 header #facebookicon {
     background: url("images/icons/facebookicon.png");
     background-size: contain;
@@ -45,7 +50,7 @@ header .icon {
     margin: 1.75vmin 1.75vmin 0 0;
     width: 9vmin;
 }
-/* Main */
+/* Main and contents */
 main #flex-container {
     align-content: flex-start;
     display: flex;
