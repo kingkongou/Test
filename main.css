@@ -3,12 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-footer {
-    background: white;
-    border-top: 2px gainsboro solid;
-    height: 7.5vmin;
-}
-/* Header and contents */
+/* Header */
 header {
     background: white;
     border-bottom: 2px gainsboro solid;
@@ -19,10 +14,14 @@ header {
     z-index: 1;
 }
 header #logo {
-    height: 10vmin; /* 12.5 - 1.25 x 2 */
-    margin: 1.25vmin; /* 12.5 / 10 */
+    height: 10vmin; /* 12.5 - 1.25 * 2 */
+    margin: 1.25vmin; /* (12.5 - 10) / 2 */
 }
-/* Icons */
+/* Header Icons */
+header #twittericon {
+    background: url("images/icons/twittericon.png");
+    background-size: contain;
+}
 header #facebookicon {
     background: url("images/icons/facebookicon.png");
     background-size: contain;
@@ -39,18 +38,15 @@ header #redditicon {
     background: url("images/icons/redditicon.png");
     background-size: contain;
 }
-header #twittericon {
-    background: url("images/icons/twittericon.png");
-    background-size: contain;
-}
 header .icon {
     background-size: contain;
     float: right;
-    height: 9vmin;
-    margin: 1.75vmin 1.75vmin 0 0;
+    height: 9vmin; /* 12.5 - 1.75 x 2 */
+    margin: 1.75vmin 1.75vmin 0 0; /* (12.5 - 9) / 2 */
     width: 9vmin;
 }
-/* Main and contents */
+/* Main */
+/* Note: #flex-container margin-right = .content margin-top - .content margin-left */
 main #flex-container {
     align-content: flex-start;
     display: flex;
@@ -64,6 +60,19 @@ main #flex-container .content {
     display: block;
     height: auto;
     margin: 2% 0 0 2%;
+}
+main #fade {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(245,245,245,1));
+    bottom: 0;
+    height: 15vh;
+    position: fixed;
+    width: 100%;
+}
+/* Footer */
+footer {
+    background: white;
+    border-top: 2px gainsboro solid;
+    height: 5vmin;
 }
 /* Make elements hoverable */
 header #redditicon:hover {background: url("images/icons/redditiconhover.png");}
@@ -95,17 +104,17 @@ header #twittericon:hover {
 }
 /* Make images responsive */
 @media screen and (max-width: 479px) {
-    main #flex-container .content {width: 94%;}
+    main #flex-container .content {width: 96%;} /* 100 - 2 + 2 */
 }
 @media screen and (min-width: 480px) {
-    main #flex-container .content {width: 47%;}
+    main #flex-container .content {width: 47%;} /* (100 - 2 + 2 * 2) / 2 */
 }
 @media screen and (min-width: 720px) {
-    main #flex-container .content {width: 31%;}
+    main #flex-container .content {width: 30.6%;} /* ~(100 - 2 + 3 * 2) / 3 */
 }
 @media screen and (min-width: 960px) {
-    main #flex-container .content {width: 23%;}
+    main #flex-container .content {width: 22.5%;} /* (100 - 2 + 4 * 2) / 4 */
 }
 @media screen and (min-width: 1200px) {
-    main #flex-container .content {width: 18%;}
+    main #flex-container .content {width: 17.6%;} /* (100 - 2 + 5 * 2) / 5 */
 }
